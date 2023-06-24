@@ -7,9 +7,15 @@ https://www.yodiw.com/solve-importerror-cannot-import-name-linear8bitlt-from-qua
 pip install scipy
 ```
 
-bitsandbytes error : UserWarning: The installed version of bitsandbytes was compiled without GPU support.
+## bitsandbytes error : UserWarning: The installed version of bitsandbytes was compiled without GPU support.
 https://blog.csdn.net/anycall201/article/details/129930919
 
+but the simplest way is 
+
+goto the xxxx/envs/lit-gpt/lib/python3.10/site-packages/bitsandbytes/
+```
+cp libbitsandbytes_cudaxxx.so libbitsandbytes_cpu.so
+```
 ## WARNING: No libcudart.so found! Install CUDA or the cudatoolkit packageneed to install
 ```
 conda install cudatoolkit
