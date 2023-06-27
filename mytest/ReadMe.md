@@ -31,3 +31,9 @@ python generate.py --max_new_tokens=1500 --checkpoint_path=checkpoints/lit-llama
 python generate.py --max_new_tokens=1500 --checkpoint_path=checkpoints/lit-llama/65B/lit-llama.pth --num_samples=5 --quantize llm.int8 --prompt "一个天文摄影爱好者去郊区摄影，在黑暗里，他看到了一个诡异的现象"
 
 python generate.py --max_new_tokens=1500 --checkpoint_path=checkpoints/lit-llama/30B/lit-llama.pth --num_samples=5  --prompt "一个天文摄影爱好者去郊区摄影，在黑暗里，他看到了一个诡异的现象"
+
+## 4.Train Time Consumption
+Lora Alpaca 
+LLAMA-7b   3 hours single A100-80G
+LLAMA-13b  6 hours single A100-80G
+LLAMA-30b  9 hours single A100-80G
